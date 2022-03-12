@@ -1,0 +1,18 @@
+element.style {
+}
+.hk-wrapper.hk-vertical-nav .hk-nav.hk-nav-light {
+    background: #fff;
+}
+.hk-wrapper.hk-vertical-nav .hk-nav {
+    position: fixed;
+    top: 57px;
+    left: 0;
+    width: 240px;
+    margin-left: 0;
+    bottom: 0;
+    z-index: 100;
+    border: none;
+    box-shadow: 0 0 28px rgb(0 0 0 / 7%);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
