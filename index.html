@@ -129,10 +129,16 @@
 <p>Для начала работы с рекламной сетью, вам необходимо интегрировать <a href="lox.ru">DragonAds SDK</a> в свое приложение, выбрать формат объявления и реализовать рекламу.</p>
                             
 <p>Документация содержит справочник по созданию, загрузки, показа рекламы в сети DragonAds.</p>
+<h2>Импорт и инициализация</h2>
+<p>Импорт</p>
 <pre><code class="language-java">import io.brainstudio.dragon.ads.*;
 </code></pre>
 <p>Инициализация.</p>
 <pre><code class="language-java">import io.brainstudio.dragon.ads.*;
+private String status = "$-$";
+public void onCreate(Bundle _savedInstanceState) {
+DragonAds.Init(status);
+}
 </code></pre>
 <h3><a href="#php-api" id="php-api"><a href="/wiki/PHP-API">PHP API</a></a></h3>
 <p>Описание стандартных классов и функций в php и jphp. <a href="/wiki/PHP-API">Читать подробнее</a>.</p>
