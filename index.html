@@ -151,6 +151,31 @@ public class MainActivity extends Activity {
                             - Межстраничное<br>
                             - Видео<br>
                             </p>
+<h2>Создание и загрузка рекламного блока</h2>
+<p>Создание.</p>
+<pre><code class="language-java">import io.brainstudio.dragon.ads.*;
+
+public class MainActivity extends Activity {
+
+   private DragonBanner banner;
+   private DragonInterstitial interstitial;
+   private DragonVideo video;
+   
+   public void onCreate(Bundle _savedInstanceState) {
+   banner.setID('dragon-ads-20202/20394');
+   interstitial.setID('dragon-ads-20484/47483');
+   video.setID('dragon-ads-49400/47564');
+   }
+}
+</code></pre>
+<p>Загрузка.</p>
+<pre><code class="language-java">public void onCreate(Bundle _savedInstanceState){
+banner.Load();
+interstitial.Load();
+video.Load();
+}
+                       
+</code></pre>
 <h3><a href="#php-api" id="php-api"><a href="/wiki/PHP-API">PHP API</a></a></h3>
 <p>Описание стандартных классов и функций в php и jphp. <a href="/wiki/PHP-API">Читать подробнее</a>.</p>
 <h3><a href="#gui-api" id="gui-api"><a href="/wiki/API">GUI API</a></a></h3>
